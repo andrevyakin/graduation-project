@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Icon({ id, ...props }) {
-    const { color, size, addClassName } = props;
+function Icon({id, ...props}) {
+    const {color, size, addClassName} = props;
     return (
         <svg
             className={`icon icon-${id} ` + addClassName}
@@ -10,9 +10,7 @@ function Icon({ id, ...props }) {
             width={size}
             height={size}
         >
-            <use
-                xlinkHref={`${process.env.PUBLIC_URL}/images/icons/sprite.svg#icon-${id}`}
-            />
+            <use xlinkHref={`/images/icons/sprite.svg#icon-${id}`} />
         </svg>
     );
 }
